@@ -29,18 +29,9 @@ public static class DatabaseHelpers
         .RuleFor(x => x.Prozivodi, f => _proizvodFaker.Generate(f.Random.Number(1, 100)))
         .RuleFor(x => x.Zaposleni, f => _osobaFaker.Generate(f.Random.Number(1, 10)));
     
-    private const string _databasePath = "database.json";
-    private static void CreateDatabaseIfNotExists()
-    {
-        if(File.Exists(_databasePath))
-            return;
-        
-        File.WriteAllText(_databasePath, JsonConvert.SerializeObject(_prodavnicaFaker.Generate(5)));
-    }
 
     public static List<Prodavnica> LoadProdavnice()
     {
-        CreateDatabaseIfNotExists();
-        return JsonConvert.DeserializeObject<List<Prodavnica>>(File.ReadAllText(_databasePath))!;
+        return JsonConvert.DeserializeObject<List<Prodavnica>>(JsonConvert.SerializeObject(_prodavnicaFaker.Generate(System.Random.Shared.Next(3, 10))))!;
     }
 }
