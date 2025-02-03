@@ -24,7 +24,7 @@ public static class Helpers
         Console.WriteLine("===================================");
         Console.WriteLine("Prodavnica sa najvecom vrednoscu zaliha");
         // TODO: ===
-        
+        // Ispisi: Prodavnica TA ima vrednost zaliha od XXXXX RSD
         // ===
         Console.WriteLine("===================================");
     }
