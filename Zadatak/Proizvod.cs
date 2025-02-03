@@ -10,6 +10,6 @@ public class Proizvod
    
    public double UkupnaVrednostZaliha()
    {
-      // TODO: 
+       return 1;
    }
 }
