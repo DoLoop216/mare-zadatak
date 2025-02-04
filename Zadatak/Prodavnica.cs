@@ -10,11 +10,10 @@ public class Prodavnica
     public void IspisiOsnovnePodatke()
     {
         Console.WriteLine("===================================");
-        // TODO: Ispisi
-        // Naziv:
-        // Adresa:
-        // Broj proizvoda:
-        // Broj zaposlenih:
+        Console.WriteLine("Naziv: " + Naziv);
+        Console.WriteLine("Adresa: " + Adresa);
+        Console.WriteLine("Broj proizvoda: " + Prozivodi.Count);
+        Console.WriteLine("Broj zaposlenih: " + Zaposleni.Count);
         Console.WriteLine("===================================");
     }
 }
