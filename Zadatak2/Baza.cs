@@ -6,7 +6,7 @@ public static class Baza
 
     public static void InicijalizujBazu()
     {
-        for(int i = 0; i > 10; i++)
+        for(int i = 0; i < 10; i++)
         {
             Partneri.Add(new Osoba
             {
